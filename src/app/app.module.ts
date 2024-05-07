@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { OffresComponent } from './components/offres/offres.component';
-import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule,FormsModule } from '@angular/forms';
 import { AjouterOffreComponent } from './components/ajouter-offre/ajouter-offre.component';
 import { ModifierOffreComponent } from './components/modifier-offre/modifier-offre.component';
 import { HttpClientModule } from '@angular/common/http';
@@ -22,6 +22,13 @@ import { FooterComponent } from './components/footer/footer.component';
 import { AdminmainComponent } from './components/admin/adminmain/adminmain.component';
 import { AdminsidebarComponent } from './components/admin/adminsidebar/adminsidebar.component';
 import { AdminheaderComponent } from './components/admin/adminheader/adminheader.component';
+import { BlogComponent } from './components/blog/blog.component';
+import { MaterialModule } from './AngularMaterialModule';
+import { ViewAllComponent } from './components/view-all/view-all.component';
+import { ViewBlogComponent } from './components/view-blog/view-blog.component';
+import { SearchByNameComponent } from './components/search-by-name/search-by-name.component';
+
+
 
 
 @NgModule({
@@ -40,6 +47,12 @@ import { AdminheaderComponent } from './components/admin/adminheader/adminheader
     AdminmainComponent,
     AdminsidebarComponent,
     AdminheaderComponent,
+    BlogComponent,
+    ViewAllComponent,
+    ViewBlogComponent,
+    SearchByNameComponent,
+ 
+
 
 
   ],
@@ -52,7 +65,10 @@ import { AdminheaderComponent } from './components/admin/adminheader/adminheader
     MatTableModule,
     BrowserAnimationsModule,
     NgxChartsModule,
-
+    FormsModule,
+    HttpClientModule,
+    MaterialModule,
+    ReactiveFormsModule
 
 
     

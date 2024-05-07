@@ -9,6 +9,10 @@ import { ReclamationsComponent } from './components/reclamations/reclamations.co
 import { ChatComponent } from './components/chat/chat.component';
 import { HomeComponent } from './components/home/home.component';
 import { AdminmainComponent } from './components/admin/adminmain/adminmain.component';
+import { BlogComponent } from './components/blog/blog.component';
+import { ViewAllComponent } from './components/view-all/view-all.component';
+import { ViewBlogComponent } from './components/view-blog/view-blog.component';
+import { SearchByNameComponent } from './components/search-by-name/search-by-name.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent }, 
@@ -17,6 +21,10 @@ const routes: Routes = [
   { path: 'modifier-reclamation/:id', component: ModifierReclamationComponent },
   { path: 'chat', component: ChatComponent },
   { path: 'admin', component:  AdminmainComponent },
+  { path: 'blog', component:BlogComponent},
+  { path: 'view-all', component:ViewAllComponent},
+  { path: 'view-blog/:id', component:ViewBlogComponent},
+  { path: 'search-by-name', component:SearchByNameComponent}, 
 ];
 
 @NgModule({
